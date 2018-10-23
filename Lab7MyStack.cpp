@@ -2,15 +2,9 @@
 // Lab7MyStack.cpp
 //  10/21/18
 
-//  All functions are initialized in this file to be implemented in Lab7Driver.cpp
-  
-
 #include "Lab7MyStack.h"
 
-
-This function is used to reverse the letters in a string using a stack data structure
-
-string stringReversal1(string input)
+string stringReversal1(string input) //This reverses the letters in a string using a stack data structure
 {
 	string newString;
 	stack<char> data;
@@ -18,7 +12,7 @@ string stringReversal1(string input)
 	{
 		for (int i(0);  i < input.size(); i++)
 		{
-			data.push(input.at(i)); //adds the character that is in the array string at i to the stack until all chars have been coppied into stack
+			data.push(input.at(i)); //adds the character that is in the array at i to the stack
 		}
 		while(!data.empty())
 		{
@@ -37,7 +31,7 @@ string stringReversal2(string input)
 	{
 		for (int i(0); i < input.size(); i++)
 		{
-			data.push_back(input.at(i));//adds character to the vector from the array string while i is less than the size of the array string
+			data.push_back(input.at(i));	//adds character to the vector from the array string
 		}
 		while (!data.empty())
 		{
@@ -54,9 +48,9 @@ string stringReversal3(string input)
 	list<char> data;
 	if (data.empty())
 	{
-		for (int i(0); i < input.size(); i++)
+		for (int i(0); i < input.size(); i++) //for i is less than the size of the array string
 		{
-			data.push_back(input.at(i)); //adds character to the list from the array string while i is less than the size of the array string
+			data.push_back(input.at(i)); //adds character to the list from the array string
 		}
 		while (!data.empty())
 		{
@@ -68,7 +62,7 @@ string stringReversal3(string input)
 }
 
 //Defines function for MyStack class
-bool MyStack::isEmpty() const //This function checks to see if a MyStack object is empty
+bool MyStack::isEmpty() const //This checks if a MyStack object is empty
 {
 	if (data.empty()) //data is a vector or a list so the same STL functions can be called
 	{
@@ -100,9 +94,9 @@ string stringReversal4(string input)
 	MyStack data;
 	if (data.isEmpty())
 	{
-		for (int i(0); i < input.size(); i++)
+		for (int i(0); i < input.size(); i++) // For i is less than the size of the string
 		{
-			data.push(input.at(i)); //Adds char at i in array string to data, which is a MyStack data structure until i is no longer less than the size of the string
+			data.push(input.at(i)); //Adds char at i in array string to data, which is a MyStack data structure
 		}
 		while (!data.isEmpty())
 		{
