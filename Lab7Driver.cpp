@@ -12,25 +12,25 @@
 int main()
 {
 	
-	string test1;
-	cout << "Enter a string for Test 1: " << endl;
-	cin >> test1;
-	cout << "The results of Test 1 are: " << stringReversal1(test1) << endl << endl;
+	string str1;
+	cout << "Enter a string for Reversal: " << endl;
+	cin >> str1;
+	cout << "The reverse of that is " << stringReversal1(str1) << endl << endl;
 
-	string test2;
-	cout << "Enter a string for Test 2: " << endl;
-	cin >> test2;
-	cout << "The results of Test 2 are: " << stringReversal2(test2) << endl << endl;
+	string str2;
+	cout << "Enter a 2nd string for Reversal: " << endl;
+	cin >> str2;
+	cout << "The reverse of that is " << stringReversal1(str2) << endl << endl;
 
-	string test3;
-	cout << "Enter a string for Test 3: " << endl;
-	cin >> test3;
-	cout << "The results of Test 3 are: " << stringReversal3(test3) << endl << endl;
+	string str3;
+	cout << "Enter a 3rd string for Reversal: " << endl;
+	cin >> str3;
+	cout << "The reverse of that is " << stringReversal1(str3) << endl << endl;
 
-	string test4;
-	cout << "Enter a string for Test 4: " << endl;
-	cin >> test4;
-	cout << "The results of Test 4 are: " << stringReversal4(test4) << endl << endl;
+	string str4;
+	cout << "Enter a string 4th for Reversal: " << endl;
+	cin >> str4;
+	cout << "The reverse of that is " << stringReversal1(str4) << endl << endl;
 
 	system("pause");
 	return 0;
